@@ -1,0 +1,21 @@
+.shopping-cart-table {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+.total {
+    text-align: end;
+    margin-right: 3rem;
+}
+
+.table button {
+    justify-content: end;
+}
+
+.shopping-cart-table h2 {
+    margin: 1rem;
+}
+
+.actions {
+    width: 170px;
+}
