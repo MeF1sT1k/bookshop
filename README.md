@@ -1,8 +1,9 @@
 <h1>Book Store</h1>
 
 An intuitive and dynamic online bookstore application, developed using React, Redux, and High-Order Components (HOC). Designed to deliver a seamless user experience while managing book collections and shopping carts.
+
 ---
-**Features:** 
+**Features** 
 ---
 - Interactive UI: Developed with React to offer users a fluid browsing and purchasing experience. 
 - State Management: Leveraged Redux for efficient and predictable state management, ensuring timely updates and error-free transactions. 
