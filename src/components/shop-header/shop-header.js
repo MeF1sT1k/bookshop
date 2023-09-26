@@ -1,8 +1,9 @@
 import React from 'react';
 import "./shop-header.css";
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const ShopHeader = ({ numItems, total }) => {
+const ShopHeader = ({ numItems, orderTotal }) => {
     return (
         <header className='shop-header sticky-top border-bottom'>
             <Link to="/">
@@ -15,12 +16,16 @@ const ShopHeader = ({ numItems, total }) => {
                         height="40"
                         src="https://img.icons8.com/stickers/100/shopping-cart.png"
                         alt="shopping-cart" />
-                    {numItems} items
-                    (${total})
+                    {numItems} item(s)
+                    ${orderTotal}
                 </div>
             </Link>
         </header>
     )
+};
+
+const mapStateToProps = ({ shoppingCart: { orderTotal, numItems } }) => {
+    return { orderTotal, numItems };
 }
 
-export default ShopHeader;
+export default connect(mapStateToProps)(ShopHeader);

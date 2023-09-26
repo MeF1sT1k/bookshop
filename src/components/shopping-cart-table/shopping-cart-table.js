@@ -42,6 +42,11 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
         )
     }
 
+    // const renderTotalSum = (total) => {
+    //     let result = items.reduce((sum, current) => sum + current, total)
+
+    // }
+
     return (
         <div className='shopping-cart-table'>
             <h2>Order</h2>
@@ -62,6 +67,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
             </table>
 
             <div className='total'>
+
                 <h4>Total: ${total}</h4>
             </div>
         </div>

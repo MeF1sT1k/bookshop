@@ -4,7 +4,7 @@ import thunkMiddleware from "redux-thunk";
 import reducer from "./reducers";
 
 const logMiddleware = ({ getState }) => (next) => (action) => {
-    console.log(action.type, getState());
+    // console.log(action.type, getState());
     return next(action);
 };
 
